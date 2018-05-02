@@ -1,0 +1,40 @@
+{
+    "name": "@liquid-js/videobox-server",
+    "version": "0.0.2",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": "https://github.com/Liquid-JS/videobox-server.git",
+    "author": "HitkoDev <development@hitko.si>",
+    "license": "GPL-3.0",
+    "files": [
+        "dist",
+        "yarn.lock"
+    ],
+    "scripts": {
+        "tsc": "tsc",
+        "build": "tsc -p tsconfig.production.json",
+        "lint": "tslint --fix --project .",
+        "prepack": "yarn build",
+        "start": "node ./dist/index.js",
+        "start:dev": "nodemon -e ts -w ./src -x ts-node --fast --cache-directory .tscache ./src/index.ts"
+    },
+    "dependencies": {
+        "@liquid-js/videobox-core": "^0.0.5",
+        "json-stable-stringify": "^1.0.1",
+        "koa": "^2.5.1",
+        "koa-bodyparser": "^4.2.0",
+        "koa-onerror": "^4.0.0",
+        "koa-router": "^7.4.0"
+    },
+    "devDependencies": {
+        "@types/json-stable-stringify": "^1.0.32",
+        "@types/koa": "^2.0.45",
+        "@types/koa-bodyparser": "^4.2.0",
+        "@types/koa-router": "^7.0.28",
+        "@types/node": "^9.6.1",
+        "nodemon": "^1.17.3",
+        "ts-node": "^6.0.2",
+        "tslint": "^5.9.1",
+        "typescript": "^2.8.3"
+    }
+}

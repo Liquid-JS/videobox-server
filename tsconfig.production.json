@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2017",
+        "moduleResolution": "node",
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "preserveConstEnums": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "sourceMap": true,
+        "declaration": true,
+        "outDir": "./dist",
+        "lib": [
+            "es2017",
+            "esnext.asynciterable",
+            "dom"
+        ]
+    },
+    "files": [
+        "./src/index.ts"
+    ]
+}
