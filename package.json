@@ -1,6 +1,6 @@
 {
     "name": "@liquid-js/videobox-server",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": "https://github.com/Liquid-JS/videobox-server.git",
@@ -19,7 +19,7 @@
         "start:dev": "nodemon -e ts -w ./src -x ts-node --fast --cache-directory .tscache ./src/index.ts"
     },
     "dependencies": {
-        "@liquid-js/videobox-core": "^0.0.5",
+        "@liquid-js/videobox-core": "^0.1.0",
         "json-stable-stringify": "^1.0.1",
         "koa": "^2.5.1",
         "koa-bodyparser": "^4.2.0",
